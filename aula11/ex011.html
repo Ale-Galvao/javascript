@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições em JS</title>
+</head>
+<body>
+    <h1>Países</h1>
+    Verificando seu país:<input type="text" name="país" id="país">
+    <input type="button" value="Verificando" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var país = document.querySelector('input#país')
+            var res = document.querySelector('div#res')
+            if (país == 'Brasil')
+            res.innerHTML('Você é Brasileiro')
+             else (país == 'EUA')
+             res.innerHTML('Você é estrangeiro')
+             
+        }
+    </script>
+</body>
+</html>
